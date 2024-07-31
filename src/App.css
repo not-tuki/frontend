@@ -1,0 +1,181 @@
+body {
+  background-color: #eff0f4;
+
+}
+
+.main {
+  position: relative;
+
+}
+
+.sider {
+  height: 100vh;
+  position: sticky !important;
+  left: 0;
+  bottom: 0;
+  top: 0;
+
+}
+
+.content {
+  width: 1250px;
+  height: auto;
+
+}
+
+.itemsForm {
+  width: 1160px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  z-index: -1;
+}
+
+
+
+.btnClick {
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: 'SF Pro Display';
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-collapse: none;
+  background-color: transparent;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 16px;
+  position: relative;
+  background-color: transparent;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* Align border-bottom with the bottom of the btn */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  /* Adjust the width of the border */
+  border-bottom: 2px solid transparent;
+  /* Initially transparent */
+  transition: border-color 0.3s;
+  background-color: transparent;
+}
+
+.btn-selected::after {
+  background-color: transparent;
+  border-bottom-color: #000;
+  /* Border color for selected item */
+}
+
+.imgbtn {
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  right: 10px;
+
+}
+
+
+.delete {
+  height: 30px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.imgbtn:hover {
+  height: 35px;
+  width: 45px;
+
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the container take the full viewport height */
+  flex-direction: row;
+}
+
+.login-form {
+  margin-top: -100px;
+  width: 500px;
+  height: 240px;
+  background-color: transparent;
+  padding: 00px;
+  /* Optional for visual improvements */
+  border-radius: 8px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%; /* Makes the button take the full width of its container */
+  background-color:  rgb(255, 119, 121); /* Sets the background color of the button */
+  border: none; /* Removes default border if needed */
+  color: white; /* Sets text color to white for contrast */
+  padding: 10px; /* Adds padding for better spacing */
+  font-size: 16px; /* Sets a readable font size */
+  border-radius: 4px; /* Rounds the button corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.login-form-button:hover {
+  background-color:  rgb(255, 119, 121); /* Changes background color on hover */
+}
+.custom-input{
+  border: 1px solid black;
+
+}
+.custom-input .ant-input {
+  border-color: rgb(0, 0, 0); /* Your desired border color */
+}
+
+.custom-input .ant-input:hover {
+  border-color: rgb(0, 0, 0); /* Color on hover */
+}
+
+.logo-login{
+  margin-left: 10px;
+  position: relative;
+  bottom: 0;
+}
+/* Ensure the custom styles apply correctly */
+/* Default checkbox border color and background */
+.register-text  {
+  color: rgb(255, 119, 121);
+}
+.register-text:hover{
+  color:  rgb(255, 119, 121);
+}
+.logo-top{
+  position:absolute;
+  top: 0;
+  left: 0;
+  margin-top: -50px;
+  width: 200px;
+}
+.admin-top{
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  width: 80px;
+  font-family:'SF Pro Display';
+  color: black;
+}
+

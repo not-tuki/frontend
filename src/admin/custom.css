@@ -1,0 +1,49 @@
+.input-byme {
+  border: 1px solid black;
+  background-color: #eff0f4;
+}
+.input-byme:hover {
+  border: 1px solid black;
+  background-color: #eff0f4;
+}
+.input-byme .ant-input {
+  border-color: #eff0f4;
+  /* Your desired border color */
+  background-color: #eff0f4;
+  border: 1px solid black;
+
+  
+}
+.input-byme .ant-input:hover {
+  border: 1px solid dark black;
+
+  border-color: #eff0f4 !important; /* Ensure high specificity */
+}
+/* CustomModal.css */
+.ant-modal .ant-modal-content {
+  background-color: white;
+}
+
+.ant-modal .ant-modal-header {
+  background-color: white !important;
+  /* Change this to your desired header background color */
+}
+
+.ant-modal .ant-modal-footer {
+  background-color: white !important;
+  /* Change this to your desired footer background color */
+}
+
+.btn-div{
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 9px;
+  font-family: 'SF Pro Display';
+  cursor: pointer;
+  text-align: center;
+  left: 1px;
+  top: 92%;
+}

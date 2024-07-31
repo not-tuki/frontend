@@ -1,0 +1,344 @@
+.itemsForm {
+    display: grid;
+    max-width: 94%;
+    height: auto;
+    grid-template-columns: repeat(4, 4);
+    grid-template-rows: repeat(4, 4);
+}
+
+
+
+.product-card {
+    width: 210;
+    height: 600;
+    margin-left: 70;
+    padding: '0 20px';
+    margin-top: 20;
+    border-radius: '0px';
+}
+
+.product-card img {
+    width: 150px;
+    height: 260px;
+}
+
+
+
+.detail {
+    text-align: center;
+    width: 100%;
+}
+
+.name {
+    font-family: 'Arial black';
+    font-size: 11px;
+    margin-left: 30px;
+    color: black
+}
+
+.price {
+    font-family: 'Arial black';
+    display: inline;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.details {
+    font-family: 'SF Pro Display';
+    display: inline;
+    font-size: 11px;
+}
+
+.toggle-button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 9px;
+    /* Fixed border size */
+    font-family: 'SF Pro Display';
+    cursor: pointer;
+    position: absolute;
+    /* Position absolute to not affect layout */
+    right: 10px;
+    top: 92%;
+    /* Adjust as needed */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for visibility */
+}
+
+
+
+.cart::-webkit-scrollbar {
+    width: 12px;
+}
+
+.cart::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.cart::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.cart::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.product-card:hover .toggle-button {
+    opacity: 1;
+    background-color: transparent;
+    /* Show button on hover */
+}
+
+.toggle-button:hover{
+    background-color: transparent;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.increment-decrement-button {
+    border: none;
+    box-shadow: none;
+    width: 22px;
+    height: 25px;
+    font-size: large;
+    font-family: arial black;
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.new-product {
+    margin: 0 30px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    color: black;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.new-product-text {
+    margin-left: -20px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    /* Fixed border size */
+    font-family: 'SF Pro Display';
+    font-size: 13px;
+    cursor: pointer;
+    /* Position absolute to not affect layout */
+    right: 10px;
+    /* Adjust as needed */
+    opacity: 1;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    display: inline;
+}
+
+
+.main-new-product {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+    color: white;
+    z-index: 2;
+    width: 88%;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    margin-top: -114px;
+    margin-left: -45px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.second-new-product {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 60%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-new-product input {
+    width: 290px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+    margin-top: 10px;
+    background-color: white;
+    font-size: 14px;
+    font-family: 'SF Pro Display';
+
+}
+
+.second-new-product input::placeholder {
+    font-size: 10px;
+    color: #bbbbbb;
+}
+
+.text-new-product {
+    color: black;
+    margin-right: 500px;
+    margin-bottom: 400px;
+    position: absolute;
+    font-size: 17px;
+    font-family: arial black;
+}
+
+.second-new-product label {
+    position: static;
+    color: black;
+    margin-left: -230px;
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'SF Pro Display';
+}
+
+.btn-create-product {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    margin-top: 20px;
+    border: 0;
+    background-color: rgb(77, 77, 244);
+    color: white;
+    font-size: 13px;
+    box-shadow: 0px 0px 1px rgb(88, 88, 89);
+    cursor: pointer;
+    display: inline;
+    margin-left: 37%;
+    margin-top: 429px;
+}
+
+.containerbag {
+    position: fixed;
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    background-color: transparent;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    background-image: 'D:/FrontEnd/my-vite-app/my-vite-app/src/assets/Images/shopping-bag.png';
+}
+
+.containerbag img {
+    width: 100%;
+    height: auto;
+}
+
+.centered-text {
+    font-family: 'SF Pro Display';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    /* Change color as needed */
+    font-size: 16px;
+    /* Adjust as needed */
+}
+
+.containerbag:hover {
+    width: 85px;
+    height: 85px;
+}
+
+.scrollbar {
+    max-height: 450px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.btn-remove{
+    position: absolute;
+    right:0;
+    top: 0;
+    margin-right: 22px;
+}
+
+.product-details{
+    border: 2px solid var(--softer-color);
+    background-color: white;
+    font-family: 'SF Pro Display';
+    text-align: center;
+}
+.box-details{
+    border:none;
+    max-width: 200px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(225, 223, 221, 0.522);    
+}
+.custom-ok-button-card {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 9px;
+    font-family: 'SF Pro Display';
+    cursor: pointer;
+    right: 10px;
+    top: 92%;
+}
+.custom-ok-button-card:hover {
+    cursor: pointer;
+}
+.custom-ok-button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 15px;
+    font-family: 'SF Pro Display';
+    cursor: pointer;
+    text-align: center;
+    
+}
+.custom-ok-button:hover {
+    cursor: pointer;
+}
